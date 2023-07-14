@@ -1,0 +1,34 @@
+An internet connection to a building or home is normally delivered through a coaxial cable and/or fiber-optic cable from an internet service provider (ISP). 
+--> This connection is fed into a gateway modem located inside the building or home (for home internet customers, this hardware is often provided by the ISP). 
+
+The modem then passes the internet connection through a twisted pair Ethernet cable to a router or a single computer.
+
+The router uses twisted pair Ethernet cables to distribute wired network connections internally to the business or home.
+--> These network cables are also called CAT cables. 
+
+It is possible that you have purchased an Ethernet CAT5 or CAT6 cable for your home internet connection. 
+
+--> Twisted pair cables Originally, telephone and early data cables included two copper wires, one for transmitting data and one for receiving data. 
+--> The two wires laid parallel to one another.
+--> This configuration was affected by electromagnetic interference (EMI), radio frequency interference (RFI), and crosstalk between the two copper wires.
+--> One of the initial engineering steps to resolve these issues involved twisting the wire pair together,
+    which reduced some of the extra noise on the lines.
+
+
+Twisted pair Ethernet cables are commonly used in LANs because: 
+
+--> They offer multiple levels of protection against EMI, RFI, and crosstalk.
+
+--> The lower levels of interference protection provide low-cost options, which are generally more accessible to home users and small businesses. 
+
+
+--> UTP,  STP, and FTP Ethernet cables
+Twisted pair Ethernet cable uses four pairs of color-coded copper wires. Each colored pair, one solid and one striped, are twisted together.
+The STP and FTP labels are often used interchangeably to reference shielded and/or foiled cables. STP and FTP braided and foiled shields 
+can also exist together in the same cable for extra protection against interference. It is important to check the manufacturer’s description of the 
+Ethernet cable to determine which interference-reducing method.
+
+
+was used in the manufacturing of the cable.
+
+--> The cables are thin, light weight, and malleable enough to install and move easily.
