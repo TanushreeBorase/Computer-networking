@@ -1,0 +1,14 @@
+Border Gateway Protocol (BGP) is a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems (AS) 
+on the Internet.
+
+BGP used for routing within an autonomous system is called Interior Border Gateway Protocol, Internal BGP (iBGP). In contrast, the Internet application of the protocol is 
+called Exterior Border Gateway Protocol, External BGP (eBGP).BGP neighbors, called peers, are established by manual configuration among routers to create a TCP session on
+port 179. A BGP speaker sends 19-byte keep-alive messages every 30 seconds (protocol default value, tunable) to maintain the connection.
+Among routing protocols, BGP is unique in using TCP as its transport protoco.
+
+Route selection process
+The BGP standard specifies a number of decision factors, more than the ones that are used by any other common routing process, 
+for selecting NLRI to go into the Loc-RIB. The first decision point for evaluating NLRI is that its next-hop attribute must be reachable (or resolvable). 
+Another way of saying the next-hop must be reachable is that there must be an active route, already in the main routing table of the router,
+to the prefix in which the next-hop address is reachable.
+
