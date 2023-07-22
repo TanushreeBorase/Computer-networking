@@ -1,0 +1,50 @@
+Broadband Protocols
+
+--> Broadband communications require a set of instructions, rules, and communication to various network layer protocols to support operation.
+Point to Point Protocol (PPP) for broadband communications is a set of instructions used to transmit data between two directly connected devices.
+This reading will cover the definitions, structures, and details of Point to Point Protocol (PPP) and Point to Point Protocol over Ethernet (PPPoE).
+
+
+Point to Point Protocol (PPP)
+
+1) Point to Point Protocol (PPP) is a byte-oriented protocol broadly used for high-traffic data transmissions.
+2) PPP functions at the data link layer, which transmits data between two devices on the same network. 
+3) PPP is designed to link devices, so the endpoints do not need to be the same vendor to work. 
+
++ Network Control Protocol (NCP) will be used to negotiate optional configuration parameters and facilities for the network layer. 
+There is an NCP for each higher layer protocol used by the PPP.
+
++ Link Control Protocol (LCP) initiates and terminates connections automatically for hosts.
+It automatically configures the interfaces at each end like magic numbers and selecting for optional authentication.
+
+Data is sent using PPP in a frame. A frame is a collection of data sent to a receiving point. 
+
+
+PPP uses the following frame format:
+
+Flag is a single byte and lets the receiver know this is the beginning of the frame. Depending on the encapsulation, 
+there may or may not be a start flag or an end flag.
+
+Address is a single byte, and it contains the broadcast address.
+
+Control is a single byte required for various purposes but also allows a connectionless data link.
+
+Protocol varies from one to three bytes which identify the network protocol of the datagram.
+
+Data is where the information you need to transmit is stored and has a limit of 1500 bytes per frame.
+
+Frame check sequence (FCS) is 2 or 4 bytes and is used to verify data is intact upon receipt at the endpoint. 
+
+
+Encapsulation
+Encapsulation is the process by which each layer takes data from the previous layer and adds headers and trailers for the next layer to interpret. 
+
+Key takeaways
+Broadband internet requires several protocols to make sure different connected devices can communicate with each other. 
+
+Point to Point Protocol (PPP) encapsulates data, so any PPP configured devices can communicate without issue.
+
+Point to Point over Ethernet (PPPoE) is an extra layer of encapsulation for standard PPP frames, to enable data to be sent over ethernet connections
+
+When the data is packaged in a frame, it undergoes encapsulation.
+
